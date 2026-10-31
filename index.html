@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Harlan 设计的视频动作分析工具，帮助快速完成本地视频分段与工时记录。">
+  <title>Harlan · 视频动作分析</title>
+  <style>
+    :root{--ink:#172033;--muted:#647087;--line:#e5e9f0;--blue:#2457e6;--blue-dark:#173fb1;--paper:#fff;--wash:#f5f7fc}
+    *{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Inter,"Microsoft YaHei",system-ui,sans-serif}
+    a{color:inherit;text-decoration:none}.shell{max-width:1120px;margin:0 auto;padding:0 28px}
+    header{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+    .brand{font-size:18px;font-weight:750;letter-spacing:-.03em}.brand i{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--blue);margin-right:9px}
+    .mini{color:var(--muted);font-size:14px}.hero{min-height:calc(100vh - 79px);display:grid;align-content:center;padding:84px 28px 60px}
+    .eyebrow{color:var(--blue);font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}.hero h1{max-width:760px;font-size:clamp(44px,7vw,82px);line-height:1.06;letter-spacing:-.065em;margin:18px 0 26px}
+    .hero p{max-width:555px;margin:0;color:var(--muted);font-size:18px}.actions{display:flex;gap:12px;margin-top:36px;flex-wrap:wrap}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 21px;border-radius:9px;background:var(--blue);color:white;font-weight:700;transition:.16s}.button:hover{background:var(--blue-dark);transform:translateY(-1px)}
+    .button.secondary{background:white;color:var(--ink);border:1px solid var(--line)}.button.secondary:hover{background:var(--wash)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:13px;overflow:hidden;margin:10px 0 70px}.card{background:white;padding:27px}.card strong{display:block;font-size:15px;margin-bottom:7px}.card span{color:var(--muted);font-size:14px}
+    footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);font-size:14px}footer b{color:var(--ink)}
+    @media(max-width:620px){.shell{padding-left:20px;padding-right:20px}.hero{padding:68px 20px 46px}.hero h1{font-size:48px}.hero p{font-size:16px}.grid{grid-template-columns:1fr;margin-bottom:48px}header{height:68px}.mini{display:none}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <a class="brand" href="./"><i></i>Harlan</a>
+      <span class="mini">视频动作分析工具</span>
+    </header>
+  </div>
+  <main class="shell hero">
+    <div class="eyebrow">Video motion analysis</div>
+    <h1>把视频观察，变成清晰的动作数据。</h1>
+    <p>在本机载入视频、标记动作边界、记录工时，并导出可复用的分析结果。视频不会上传，数据由你掌控。</p>
+    <div class="actions">
+      <a class="button" href="./analysis.html">开始分析 <span aria-hidden="true">&nbsp;→</span></a>
+      <a class="button secondary" href="#about">了解工具</a>
+    </div>
+  </main>
+  <section class="shell" id="about">
+    <div class="grid">
+      <div class="card"><strong>本地处理</strong><span>视频和分析数据都保留在你的设备上。</span></div>
+      <div class="card"><strong>连续打点</strong><span>按视频时间快速分段，支持后续修正。</span></div>
+      <div class="card"><strong>轻松导出</strong><span>导出快照或 CSV，便于归档和复用。</span></div>
+    </div>
+  </section>
+  <footer><div class="shell">Designed by <b>Harlan</b> · Video Motion Analysis</div></footer>
+</body>
+</html>
